@@ -1,9 +1,22 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>registrar-egresos</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-header titulo= " Registro de Egresos"></app-header>
 
 <ion-content>
-
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Formulario de Registro de Egresos</ion-card-title>
+            <ion-card-subtitle>Rellene todos los campos solicitados</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+            <ion-item>
+                <ion-label position="floating">Descripcion</ion-label>
+                <ion-input type="text" name="descripcion" [(ngModel)]="datos_egresos.descripcion"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label position="floating">Precio</ion-label>
+                <ion-input type="text" name="precio" [(ngModel)]="datos_egresos.precio"></ion-input>
+            </ion-item>
+            <ion-button expand="full" (click)="enviarEgresos()">Enviar formulario</ion-button>
+            <ion-button expand="full" routerLink="/inicio">Cancelar</ion-button>
+        </ion-card-content>
+    </ion-card>
 </ion-content>

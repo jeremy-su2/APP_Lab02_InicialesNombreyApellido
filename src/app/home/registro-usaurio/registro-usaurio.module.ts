@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { RegistroUsaurioPageRoutingModule } from './registro-usaurio-routing.module';
 
 import { RegistroUsaurioPage } from './registro-usaurio.page';
+import { ComponentsModule } from '../../components/components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    RegistroUsaurioPageRoutingModule
+    RegistroUsaurioPageRoutingModule,
+    ComponentsModule
   ],
   declarations: [RegistroUsaurioPage]
 })

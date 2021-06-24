@@ -1,9 +1,30 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>inicio</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-header titulo="inicio"></app-header>
+
 
 <ion-content>
+  <ion-list>
 
+    <ion-card-header mode="ios">
+      <ion-card-title>EN ESTA PAGINA DE INICIO TENDREMOS LOS DIFERENTES BOTONES A LAS PAGINAS</ion-card-title>
+      <ion-card-subtitle>Estos botones los llevarán a las distintas páginas que sus nombres especifican de modo 
+                        que solo tiene que seleccionarlo y rellenar los campos solicitados en esas páginas cada 
+                        una de ellas tiene un botón regresar por lo que podrá moverse libremente por la aplicación</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-item>
+      <ion-button routerLink="/registro-usaurio" color="primary"><ion-icon slot="start" name="enter-outline"></ion-icon>Registrar Usuarios</ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-button routerLink="/registrar-egresos" color="danger" ><ion-icon slot="start" name="star"></ion-icon>Registrar Egresos</ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-button routerLink="/listar-usuarios" color="medium" ><ion-icon slot="start" name="accessibility-outline"></ion-icon> Listar Usuarios</ion-button>
+    </ion-item>
+    <ion-item>  
+      <ion-button routerLink="/listar-egresos" color="success" ><ion-icon slot="start" name="exit-outline"></ion-icon>Listar Egresos</ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-button routerLink="/selector-egresos" color="dark"><ion-icon slot="start" name="search-circle-outline"></ion-icon>Seleccionar Egresos</ion-button>
+    </ion-item>
+  </ion-list>
 </ion-content>

@@ -1,9 +1,17 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>selector-egresos</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-header titulo= "Selector de Egresos"></app-header>
 
 <ion-content>
+
+    <ion-item>
+
+        <ion-select [(ngmodel)]="datos.egresos.id_usuario" placeholder="Seleccionador">
+
+        <ion-select-option *ngFor="let dato_registro of datos_Registros" [value]="usuairos._id">
+         {{dato_registro.nombre}}
+        </ion-select-option>
+
+        </ion-select>
+
+    </ion-item>
 
 </ion-content>

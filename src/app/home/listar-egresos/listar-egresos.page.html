@@ -1,9 +1,14 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>listar-egresos</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-header titulo= "Listar Egresos"></app-header>
 
 <ion-content>
+    <ion-card *ngFor= "let dato_egreso of datos_egresos">
 
+        <ion-item>
+           descripcion: {{dato_egreso.descripcion}}
+        </ion-item>
+        <ion-item>
+            precio: {{dato_egreso.precio}}
+        </ion-item>
+        
+    </ion-card>
 </ion-content>

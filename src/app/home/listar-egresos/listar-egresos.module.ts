@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { ListarEgresosPageRoutingModule } from './listar-egresos-routing.module';
 
 import { ListarEgresosPage } from './listar-egresos.page';
+import { ComponentsModule } from '../../components/components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ListarEgresosPageRoutingModule
+    ListarEgresosPageRoutingModule,
+    ComponentsModule
   ],
   declarations: [ListarEgresosPage]
 })
